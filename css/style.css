@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #333;
+    color: whitesmoke;
+    line-height: 1.6;
+    height: 100vh;
+    /* Smooth Scroll A*/
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    /* Smooth Scroll B*/
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+}
+.navbar ul li{
+    margin: 0 1rem;
+    padding: 1rem;
+}
+.navbar a{
+    text-decoration: none;
+    color: #ccc;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.navbar a:hover{
+    color: skyblue;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    /* Smooth Scroll C*/
+    scroll-snap-align: center;
+    transition: 0.75s ease-out;
+}
+section h1{
+    font-size: 4rem;
+}
+section p{
+    font-size: 1.5rem;
+}
+
+/* Section Images */
+section#home {
+    background: teal;
+}
+section#about {
+    background: #333;
+}
+section#service {
+    background: slateblue;
+}
+section#contacts {
+    background: slategray;
+}
